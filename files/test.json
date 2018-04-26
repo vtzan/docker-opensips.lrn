@@ -1,0 +1,200 @@
+{
+  "aliasColors": {},
+  "bars": true,
+  "dashLength": 10,
+  "dashes": false,
+  "datasource": "Prometheus",
+  "fill": 1,
+  "id": 37,
+  "legend": {
+    "alignAsTable": false,
+    "avg": false,
+    "current": false,
+    "max": false,
+    "min": false,
+    "rightSide": false,
+    "show": false,
+    "sortDesc": true,
+    "total": false,
+    "values": false
+  },
+  "lines": false,
+  "linewidth": 1,
+  "links": [],
+  "nullPointMode": "null",
+  "percentage": false,
+  "pointradius": 5,
+  "points": false,
+  "renderer": "flot",
+  "seriesOverrides": [
+    {
+      "alias": "WIND",
+      "color": "#447EBC"
+    },
+    {
+      "alias": "VODAFONE",
+      "color": "#BF1B00"
+    },
+    {
+      "alias": "CYTA",
+      "color": "#E0752D"
+    },
+    {
+      "alias": "COSMOTE",
+      "color": "#7EB26D"
+    },
+    {
+      "alias": "OTE",
+      "color": "#0A50A1"
+    },
+    {
+      "alias": "FORTHNET AE",
+      "color": "#EAB839"
+    },
+    {
+      "alias": "CYTA Mob",
+      "color": "#C15C17"
+    },
+    {
+      "alias": "VODAFONE Mob",
+      "color": "#BF1B00"
+    },
+    {
+      "alias": "WIND Mob",
+      "color": "#5195CE"
+    }
+  ],
+  "spaceLength": 10,
+  "span": 6,
+  "stack": false,
+  "steppedLine": false,
+  "targets": [
+    {
+      "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"mednautilus-greece\",vendor=\"587\"}",
+      "format": "time_series",
+      "hide": false,
+      "intervalFactor": 2,
+      "legendFormat": "FORTHNET AE",
+      "metric": "",
+      "refId": "A",
+      "step": 2
+    },
+    {
+      "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"mednautilus-greece\",vendor=\"597\"}",
+      "format": "time_series",
+      "hide": false,
+      "intervalFactor": 2,
+      "legendFormat": "COSMOTE",
+      "metric": "",
+      "refId": "B",
+      "step": 2
+    },
+    {
+      "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"mednautilus-greece\",vendor=\"569\"}",
+      "format": "time_series",
+      "hide": false,
+      "intervalFactor": 2,
+      "legendFormat": "CYTA Mob",
+      "metric": "",
+      "refId": "C",
+      "step": 2
+    },
+    {
+      "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"mednautilus-greece\",vendor=\"571\"}",
+      "format": "time_series",
+      "hide": false,
+      "intervalFactor": 2,
+      "legendFormat": "CYTA",
+      "metric": "",
+      "refId": "E",
+      "step": 2
+    },
+    {
+      "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"mednautilus-greece\",vendor=\"589\"}",
+      "format": "time_series",
+      "hide": false,
+      "intervalFactor": 2,
+      "legendFormat": "WIND",
+      "metric": "",
+      "refId": "F",
+      "step": 2
+    },
+    {
+      "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"mednautilus-greece\",vendor=\"582\"}",
+      "format": "time_series",
+      "hide": false,
+      "intervalFactor": 2,
+      "legendFormat": "VODAFONE",
+      "metric": "",
+      "refId": "G",
+      "step": 2
+    },
+    {
+      "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"mednautilus-greece\",vendor=\"593\"}",
+      "format": "time_series",
+      "hide": false,
+      "intervalFactor": 2,
+      "legendFormat": "WIND Mob",
+      "metric": "",
+      "refId": "H",
+      "step": 2
+    },
+    {
+      "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"mednautilus-greece\",vendor=\"594\"}",
+      "format": "time_series",
+      "hide": false,
+      "intervalFactor": 2,
+      "legendFormat": "VODAFONE Mob",
+      "metric": "",
+      "refId": "I",
+      "step": 2
+    },
+    {
+      "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"mednautilus-greece\",vendor=\"590\"}",
+      "format": "time_series",
+      "hide": false,
+      "intervalFactor": 2,
+      "legendFormat": "OTE",
+      "metric": "",
+      "refId": "J",
+      "step": 2
+    }
+  ],
+  "thresholds": [],
+  "timeFrom": null,
+  "timeShift": null,
+  "title": "Greek Vendor Statistics",
+  "tooltip": {
+    "shared": false,
+    "sort": 0,
+    "value_type": "individual"
+  },
+  "type": "graph",
+  "xaxis": {
+    "buckets": null,
+    "mode": "series",
+    "name": null,
+    "show": true,
+    "values": [
+      "avg"
+    ]
+  },
+  "yaxes": [
+    {
+      "format": "short",
+      "label": "Calls",
+      "logBase": 1,
+      "max": null,
+      "min": null,
+      "show": true
+    },
+    {
+      "format": "dtdurations",
+      "label": "",
+      "logBase": 1,
+      "max": null,
+      "min": null,
+      "show": false
+    }
+  ]
+}

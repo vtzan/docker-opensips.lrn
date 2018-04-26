@@ -68,7 +68,6 @@
       "steppedLine": false,
       "targets": [
         {
-          "$$hashKey": "object:2506",
           "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"node_exporter\",vendor=\"582\"}\t",
           "format": "time_series",
           "intervalFactor": 1,
@@ -76,7 +75,6 @@
           "refId": "A"
         },
         {
-          "$$hashKey": "object:2507",
           "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"node_exporter\",vendor=\"589\"}\t",
           "format": "time_series",
           "intervalFactor": 1,
@@ -84,7 +82,6 @@
           "refId": "B"
         },
         {
-          "$$hashKey": "object:2508",
           "expr": "node_lrn_vendor_total{instance=\"localhost:9100\",job=\"node_exporter\",vendor=\"590\"}\t",
           "format": "time_series",
           "intervalFactor": 1,
@@ -108,12 +105,11 @@
         "name": null,
         "show": true,
         "values": [
-          "avg"
+          "total"
         ]
       },
       "yaxes": [
         {
-          "$$hashKey": "object:2624",
           "format": "short",
           "label": "Calls Avg",
           "logBase": 1,
@@ -122,7 +118,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:2625",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -171,5 +166,5 @@
   "timezone": "",
   "title": "LRN Vendor Statistics",
   "uid": "7dGVsWMmz",
-  "version": 6
+  "version": 1
 }

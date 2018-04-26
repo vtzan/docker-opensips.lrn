@@ -25,8 +25,16 @@ sleep 2;
 
 # Redis
 /etc/init.d/redis-server start
-cat /usr/local/etc/opensips/redis0.list | redis-cli -n 0 --pipe
-cat /usr/local/etc/opensips/redis1.list | redis-cli -n 1 --pipe
+sleep 2;
+# Insert demo numbers to Redis DB
+/bin/echo "HSET NUMBER 2101234567 590" | redis-cli -n 0 --pipe 
+/bin/echo "HSET NUMBER 2132234567 582" | redis-cli -n 0 --pipe
+/bin/echo "HSET NUMBER 2142345678 589" | redis-cli -n 0 --pipe
+/bin/echo "HSET NUMBER 2150231224 587" | redis-cli -n 0 --pipe
+/bin/echo "HSET NUMBER 2101234567 590" | redis-cli -n 1 --pipe
+/bin/echo "HSET NUMBER 2132234567 582" | redis-cli -n 1 --pipe
+/bin/echo "HSET NUMBER 2142345678 589" | redis-cli -n 1 --pipe
+/bin/echo "HSET NUMBER 2150231224 587" | redis-cli -n 1 --pipe
 
 # Memcached
 /etc/init.d/memcached start
